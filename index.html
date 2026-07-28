@@ -7,23 +7,28 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpL-oVbTEM05O08Oro1FMfLko78q4lo4VdhB82viLAAA&s=10);
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSBPP_y5f42BnZRf77HTmR-vH3ClS2HNmhPyXTzUWwnQ&s=10);
             color: #f8fafc;
-           margin: 0;
-           padding: 0;
-           display: flex;
-           flex-direction: column;
-           align-items: center; 
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        header {
+        nav {
+            background-color: black;
+            width: 100%;
+            padding: 1rem 0;
             text-align: center;
-            padding: 2rem 1rem;
-            background-color: rgba(30, 41, 59, 0.85);
-            whidth: 100%;
             border-bottom: 2px solid #38bdf8;
         }
-        h1 {
-            margin:0;
+        nav a {
+            color: #f8fafc;
+            text-decoration: wavy;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
             color: #38bdf8;
         }
         main {
@@ -31,25 +36,43 @@
             width: 90%;
             margin: 2rem 0;
         }
-        .card {
-            background-color: rgba(30, 41, 59, 0.9);
+        .card{
+            background-color: black;
             border-radius: 12px;
             padding: 1.5rem;
-            margin-bottom: 1.5rem;
             border: 1px solid #334155;
+        }
+        .tag {
+            background-color: black;
+            color: #f8fafc;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8 rem;
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1> Buenassss</h1>
-        <p>tecnologia,cosas de mi vida</p>
-    </header>
+    <nav>
+        <a href="index.html">inicio</a>
+        <a href="biografia.html">sobre mi</a>
+        <a href="proyectos.html">proyectos</a>
+    </nav>
+
     <main>
+        <h1>mis proyectos</h1>
+        ><section class="card">
+            <h2>mi sitio web personal <span class="tag">HTML / CSS</span></h2>
+            <p>Diseño y despliegue de mi sitio web personal en GitHub Pages con estética tech en modo oscuro.</p>
+        </section>
+
         <section class="card">
-            <h2>sobre mi</h2>
-            <p>esta es mi web,puedes pedirme proyectos al privado,publicare detalles de mis proyectos y mi vida en el mundillo tech</p>
-            </section>
+            <h2>1. Mi Sitio Web Personal <span class="tag">HTML / CSS</span></h2>
+            <p>Diseño y despliegue de mi sitio web personal en GitHub Pages con estética tech en modo oscuro.</p>
+            
+        </section>
+        </section>
     </main>
-</body>
+    </body>
+
 </html>

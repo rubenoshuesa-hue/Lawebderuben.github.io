@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sitio web de Rubén - Sobre mí</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSBPP_y5f42BnZRf77HTmR-vH3ClS2HNmhPyXTzUWwnQ&s=10');
+                color: #f8fafc; /* Texto claro para que sea legible */
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            nav {
+                background-color: black;
+                width: 100%;
+                padding: 1rem 0;
+                text-align: center;
+                border-bottom: 2px solid #38bdf8;
+            }
+            nav a {
+                color: #f8fafc;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: bold;
+            }
+            nav a:hover {
+                color: #38bdf8;
+            }
+            main {
+                max-width: 800px;
+                width: 90%;
+                margin: 2rem 0;
+            }
+            .card {
+                background-color: black;
+                border-radius: 12px;
+                padding: 1.5rem;
+                margin-bottom: 1.5rem;
+                border: 1px solid #334155;
+            }
+            h1, h2 {
+                color: antiquewhite;
+            }
+            ul {
+                line-height: 1.8;
+            }
+            .tech-img {
+                width: 100%;
+                max-width: 400px;
+                border-radius: 8px;
+                margin-top: 1rem;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="biografia.html">Mi vida</a>
+            <a href="proyectos.html">Mis cositas</a>
+        </nav>
+
+        <main>
+            <h1>Sobre mí</h1>
+            
+            <section class="card">
+                <h2>Me presento</h2>
+                <p>Hola, soy Rubén, un chaval de Jaén aficionado al fútbol y a la programación.</p>
+                <p>Tengo conocimientos en Python, C, Bash, CSS y HTML.</p>
+                <p><em>I use Arch btw.</em></p>
+            </section>
+
+            <section class="card">
+                <h2>Mis intereses, stack y nivel educativo</h2>
+                <ul>
+                    <li><strong>Desarrollo web:</strong> HTML y CSS, y tocando ya JavaScript.</li>
+                    <li><strong>Sistemas:</strong> C, Python y toqueteando Rust y C++.</li>
+                    <li><strong>Tech:</strong> Hardware, software libre y cultura geek/hacker.</li>
+                </ul>
+                
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeeAyu8bibezQiXZinMrkOqim6LilD_dVrb1DH6Bq5Ag&s=10" alt="Tech img" class="tech-img">
+            </section>
+        </main>
+    </body>
+</html>
